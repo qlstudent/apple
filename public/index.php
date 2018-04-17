@@ -23,7 +23,7 @@ $containerBuilder->addDefinitions(
     [
         HelloWorld::class => create(HelloWorld::class)
             ->constructor(get('Foo'), get('Response')),
-        'Foo' => 'bar',
+        'Foo' => 'lovely',
         'Response' => function () {
             return new Response();
         },
