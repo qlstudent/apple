@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 use DI\ContainerBuilder;
-use ExampleApp\HelloWorld;
+use Apple\HelloWorld;
 use FastRoute\RouteCollector;
 use Middlewares\FastRoute;
 use Middlewares\RequestHandler;
