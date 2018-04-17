@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 use DI\ContainerBuilder;
 use Apple\HelloWorld;
+use Apple\SiteMapAddress;
 use FastRoute\RouteCollector;
 use Middlewares\FastRoute;
 use Middlewares\RequestHandler;
@@ -26,7 +27,7 @@ $containerBuilder->addDefinitions(
         'Foo' => 'lovely',
         'Response' => function () {
             return new Response();
-        },
+        }
     ]
 );
 
