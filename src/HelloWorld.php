@@ -42,8 +42,9 @@ class HelloWorld
     public function __invoke(): ResponseInterface
     {
         $response = $this->response->withHeader('Content-Type', 'text/html');
+        $text = "<html><head></head><body>Hello, {$this->_foo} world!</body></html>";
         $response->getBody()
-            ->write("<html><head></head><body>Hello, {$this->_foo} world!</body></html>");
+            ->write($text);
 
         return $response;
     }
