@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2016dcbdbfba3f95f1d749311e5455df",
+    "content-hash": "3a45c27193dab236201c440d924c631d",
     "packages": [
         {
             "name": "http-interop/http-factory",
@@ -762,6 +762,37 @@
                 "psr-7"
             ],
             "time": "2018-02-13T21:34:17+00:00"
+        },
+        {
+            "name": "rlanvin/php-mypdo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rlanvin/php-mypdo.git",
+                "reference": "10de4bb5e24b4cbef52197c0d5d2b55639bb8290"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rlanvin/php-mypdo/zipball/10de4bb5e24b4cbef52197c0d5d2b55639bb8290",
+                "reference": "10de4bb5e24b4cbef52197c0d5d2b55639bb8290",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Wrapper for PDO (MySQL) to support auto-reconnect, nested transactions and more.",
+            "homepage": "https://github.com/rlanvin/php-mypdo",
+            "time": "2017-03-15T16:35:39+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
@@ -2387,7 +2418,8 @@
         "relay/relay": 20,
         "zendframework/zend-diactoros": 20,
         "middlewares/fast-route": 20,
-        "middlewares/request-handler": 20
+        "middlewares/request-handler": 20,
+        "rlanvin/php-mypdo": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
