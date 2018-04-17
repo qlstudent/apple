@@ -13,23 +13,23 @@ class HelloWorld
     /**
      * @var string
      */
-    private $foo;
+    private $_foo;
     /**
      * @var ResponseInterface
      */
-    private $response;
+    private $_response;
 
     /**
      * HelloWorld constructor.
      *
-     * @param ResponseInterface $response
-     * @param string $foo
+     * @param string            $foo      foo is text that between hello and world 
+     * @param ResponseInterface $response response is a response object
      */
     public function __construct(
         string $foo,
         ResponseInterface $response
     ) {
-        $this->foo = $foo;
+        $this->_foo = $foo;
         $this->response = $response;
     }
 
@@ -43,7 +43,7 @@ class HelloWorld
     {
         $response = $this->response->withHeader('Content-Type', 'text/html');
         $response->getBody()
-            ->write("<html><head></head><body>Hello, {$this->foo} world!</body></html>");
+            ->write("<html><head></head><body>Hello, {$this->_foo} world!</body></html>");
 
         return $response;
     }
